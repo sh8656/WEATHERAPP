@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>오늘의 날씨</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=8fa4c3f555d6353a46519215fa95a31b"></script>
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=87288e5c895d0f27387fea6af937b9e8"></script>
     <style>
         *{margin:0; padding:0}
         body{
             height:100vh;
-            background:url("https://cdn.pixabay.com/photo/2018/05/02/18/23/landscape-3369304_960_720.jpg");
+            background: url("https://cdn.pixabay.com/photo/2016/03/27/07/32/clouds-1282314_960_720.jpg");
             background-size:cover;
             background-position: center center;
         }
@@ -45,7 +47,7 @@
             width: 270px;
             height: 340px;
             left: 79px;
-            top: 123px;
+            top: 0px;
 
             background: rgba(0, 0, 0, 0.3);
             border: 1px solid #FFFFFF;
@@ -121,6 +123,14 @@
 
             color: #FFFFFF;
         }
+        .forecast{
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            top: 350px;
+            color: #FFFFFF;
+        }
+        .forecast li{padding:15px  10px }
     </style>
 </head>
 <body>
@@ -132,7 +142,7 @@
                 <div class="main"></div>
                 <div class="temp"></div>
             </div>
-            <ul class="forecast">
+                <ul class="forecast">
                 <li>
                     <div class="f_icon"></div>
                     <div class="f_time"></div>
